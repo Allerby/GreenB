@@ -399,6 +399,9 @@ input[type="checkbox"] + label span,input[type="radio"]:checked + label span {-w
 span.logo {
   line-height:0px;
 }
+a#logo {
+  float:left;
+}
 a#logo h1 {
   margin-top:8px;
   margin-bottom:0px;
@@ -434,10 +437,31 @@ a#logo > h1 > span.stroke {
   z-index: -1;
   background-color:#000;
 }
-.main h1 {
+h1.width50.mc {
   text-align:center;
-  color:#000;
-  font-size:80px;
+  color:#ffffff;
+  font-size:50px;
+  font-style:italic;
+  text-shadow:1px 1px 1px #000;
+  padding-top:120px;
+}
+ul#nav-menu {
+  position:relative;
+  float:right;
+  margin-top:15px;
+}
+ul#nav-menu li {
+  display:inline-block;
+  color:#193300;
+  font-size:18px;
+  font-style:italic;
+  font-weight:300;
+  margin:10px;
+}
+.wrapper.w50 {
+  background-color:#fff;
+  position:relative;
+  display:block;
 }
 
 
