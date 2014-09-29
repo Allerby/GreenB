@@ -424,7 +424,6 @@ span.logo {
 }
 #logo {
   display:block;
->>>>>>> origin/master
   float:left;
 }
 a#logo h1 {
@@ -432,15 +431,16 @@ a#logo h1 {
   margin-bottom:0px;
 }
 a#logo > h1 > span.stroke {
-  font-size:80px;
+  font-size:40px;
   color: black;
   -webkit-text-fill-color: #193300;
   font-style:italic;
   position: absolute;
-  left: 145px;
+  left: 85px;
 }
 .logo-text {
   font-family:League Script;
+  font-size:22px;
   font-weight:600;
   color:#193300;
 }
@@ -448,12 +448,12 @@ a#logo > h1 > span.stroke {
 
 }
 #bike:after {
-  background-image: url('images/muxu.jpg');
+  background-image: url('images/newspaper.jpg');
   background-repeat:no-repeat;
-  background-size:cover;
   content : "";
   display: block;
   position: absolute;
+  background-position:center bottom;
   top: 0;
   left: 0;
   width: 100%;
