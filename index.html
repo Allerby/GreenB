@@ -14,6 +14,8 @@
     <!-- Bootstrap Core CSS & Ionicon font include -->
     <link href="css/ionicons.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.sidr.dark.css" rel="stylesheet">
+
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -58,13 +60,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Shop</a>
+                        <a class="page-scroll" href="shop.html">Shop</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#product">Product</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#services">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
@@ -76,7 +78,7 @@
                         <a id="toggleSearch" class="ion-search" href="#"></a>
                     </li>
                     <li>
-                        <a class="" href="#"><i id="navCart" class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i></a>
+                        <a id="shoppingCart" class="" href="#sidr"><i id="navCart" class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i></a>
                     </li>
                 </ul>
             </div>
@@ -89,6 +91,15 @@
         </form>
         <!-- /.container-fluid -->
     </nav>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="sidr">
+        <ul>
+            <li><a href="#">List 1</a></li>
+            <li class="active"><a href="#">List 2</a></li>
+            <li><a href="#">List 3</a></li>
+        </ul>
+    </div>
 
     <!-- Header -->
     <header>
@@ -147,7 +158,7 @@
                         <i class="ion-trophy"></i>
                         <!-- <i class="fa fa-circle fa-stack-2x"></i> -->
                     </span>
-                    <h4 class="service-heading">..In Award Winning Style</h4>
+                    <h4 class="service-heading">...In Award Winning Style</h4>
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
             </div>
@@ -165,7 +176,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="team-member">
+                    <div class="team-member peter">
                         <img src="img/team/sterling-archer.png" class="img-responsive img-circle" alt="">
                         <h4>Peter</h4>
                         <p class="text-muted">Lead Designer</p>
@@ -175,7 +186,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="team-member">
+                    <div class="team-member paul">
                         <img src="img/team/cyil-figgis.png" class="img-responsive img-circle" alt="">
                         <h4>Paul</h4>
                         <p class="text-muted">Lead Engineer</p>
@@ -185,7 +196,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="team-member">
+                    <div class="team-member cheryl">
                         <img src="img/team/cheryl-carol.png" class="img-responsive img-circle" alt="">
                         <h4>Cheryl</h4>
                         <p class="text-muted">Marketing and Communications</p>
@@ -213,25 +224,21 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-8">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="Your Message *" id="message"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -265,17 +272,15 @@
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
 
+    <!-- jQuery Sidr -->
+    <script src="js/jquery.sidr.js"></script>
+
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
 
     <!-- Plugin JavaScript -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/script.js"></script>

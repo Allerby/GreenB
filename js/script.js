@@ -33,6 +33,12 @@ $('#searchClose').click(function(e) {
     $('.navbar > .container').fadeToggle("slow");
 });
 
+$(document).ready(function() {
+  $('#shoppingCart').sidr({
+    side: 'right'
+  });
+});
+
 // Credit to http://www.codrops.com for the idea
 // Header animate on offset from top
 var cbpAnimatedHeader = (function() {
