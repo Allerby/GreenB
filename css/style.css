@@ -117,6 +117,16 @@ h6 {
   border-radius:35px;
 }
 
+span.fa-stack > i.ion-earth, span.fa-stack > i.ion-ios7-gear {
+  font-size:100px;
+}
+span.fa-stack i.ion-trophy {
+  color: #333333;
+  z-index: 99;
+  font-size: 80px;
+}
+
+
 /*Button Styles*/
 .btn {
   border: 2px solid #fff;
@@ -659,8 +669,11 @@ section h3.section-subheading {
 }
 
 .team-member img {
+    background-color:#636363;
+    width:220px;
+    height:220px;
     margin: 0 auto;
-    border: 7px solid #fff;
+    border: 7px solid #000;
 }
 
 .team-member h4 {
@@ -678,8 +691,7 @@ aside.clients img {
 }
 
 section#contact {
-    background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-color: #1d1d1d;
     background-position: center;
     background-repeat: no-repeat;
 }
