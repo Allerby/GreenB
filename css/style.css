@@ -29,6 +29,12 @@ a.active {
     text-decoration:none;
 }
 
+#navCart:hover {
+  outline: 0;
+  text-decoration:none;
+  color: #5CB85C;
+}
+
 a {
     color: #5CB85C;
 }
@@ -62,106 +68,54 @@ h6 {
 .bg-darkest-gray {
     background-color: #222;
 }
-
-/*.btn-primary {
-    border-color: #5CB85C;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-    color: #fff;
-    background-color: #5CB85C;
+.none {
+  display:none;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    border-color: #4DA74D;
-    color: #fff;
-    background-color: #4DA74D;
+/*CUSTOM*/
+#searchForm {
+  width:100%;
+  float:left;
+  background-color:#ffffff;
+  border:none;
+  top: 0px;
+  position: absolute;
+  height:inherit;
+  border-radius:0px;
+  -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+}
+#searchInput {
+  display:block;
+  width:49%;
+  padding:0px;
+  position:relative;
+  line-height:45px;
+  font-size:38px;
+  height:60px;
+  margin:0 auto;
+  outline:none;
+  border:0px;
+}
+#searchClose {
+  position:absolute;
+  right: 380px;
+  top: 12px;
+  font-size: 20px;
+  padding: 10px;
+  color:#1d1d1d;
 }
 
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
-    background-image: none;
+#toTop {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  font-size:22px;
+  color:#ffffff;
+  display:block;
+  padding: 5px 10px;
+  background:#1d1d1d;
+  border-radius:35px;
 }
-
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-    border-color: #5CB85C;
-    background-color: #5CB85C;
-}
-
-.btn-primary .badge {
-    color: #5CB85C;
-    background-color: #fff;
-}
-
-.btn-xl {
-    padding: 20px 40px;
-    border-color: #5CB85C;
-    border-radius: 3px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #5CB85C;
-}
-
-.btn-xl:hover,
-.btn-xl:focus,
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-    border-color: #4DA74D;
-    color: #fff;
-    background-color: #4DA74D;
-}
-
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-    background-image: none;
-}
-
-.btn-xl.disabled,
-.btn-xl[disabled],
-fieldset[disabled] .btn-xl,
-.btn-xl.disabled:hover,
-.btn-xl[disabled]:hover,
-fieldset[disabled] .btn-xl:hover,
-.btn-xl.disabled:focus,
-.btn-xl[disabled]:focus,
-fieldset[disabled] .btn-xl:focus,
-.btn-xl.disabled:active,
-.btn-xl[disabled]:active,
-fieldset[disabled] .btn-xl:active,
-.btn-xl.disabled.active,
-.btn-xl[disabled].active,
-fieldset[disabled] .btn-xl.active {
-    border-color: #5CB85C;
-    background-color:#5CB85C;
-}
-
-.btn-xl .badge {
-    color: #5CB85C;
-    background-color: #fff;
-}*/
 
 /*Button Styles*/
 .btn {
@@ -195,7 +149,8 @@ a .btn {
   color:#fff;
   text-decoration:none;
   padding:10px;
-  font-weight:500;
+  font-weight:600;
+  border-radius:0px;
 }
 
 .btn-1e {
@@ -215,7 +170,7 @@ a .btn {
 	height: 0;
 	top: 50%;
 	left: 50%;
-	background: #5CB85C;
+	background: #fff;
 	opacity: 0;
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -225,11 +180,11 @@ a .btn {
 
 a .btn-1e:hover,
 a .btn-1e:active {
-  color: #0e83cd;
+  color: #4DA74D;
 }
 
 .btn-1e:hover:after {
-	height: 300%;
+	height: 280%;
 	opacity: 1;
 }
 
@@ -246,14 +201,14 @@ a .btn-1e:active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: #5CB85C;
+    color: #fff;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #4DA74D;
+    color: #5CB85C;
 }
 
 .navbar-default .navbar-collapse {
@@ -280,6 +235,7 @@ a .btn-1e:active {
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
+    transition: all .3s;
 }
 
 .navbar-default .nav li a:hover,
@@ -335,8 +291,8 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/parked-bike.jpg);
-    background-position: center center;
+    background-image: url(../img/bridge-bike.jpg);
+    background-position: center 80%;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -359,7 +315,7 @@ header .intro-text .intro-lead-in {
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
     font-weight: 700;
@@ -382,7 +338,7 @@ header .intro-text .intro-heading {
 
     header .intro-text .intro-heading {
         margin-bottom: 50px;
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 75px;
         font-weight: 700;

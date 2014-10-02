@@ -18,3 +18,17 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+// Toggle Search Bar
+$('#toggleSearch').click(function(e) {
+    e.preventDefault();
+    $('.navbar > .container').fadeToggle("slow");
+    $('#searchForm').fadeToggle("slow");
+});
+
+// Go back to main navigation
+$('#searchClose').click(function(e) {
+    e.preventDefault();
+    $('#searchForm').fadeToggle("slow");
+    $('.navbar > .container').fadeToggle("slow");
+});
