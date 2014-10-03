@@ -33,15 +33,24 @@ $('#searchClose').click(function(e) {
     $('.navbar > .container').fadeToggle("slow");
 });
 
+//Unleash ze Shopping Cart!
 $(document).ready(function() {
-  $('#shoppingCart').sidr({
-    side: 'right'
-  });
+    $('#shoppingCart').sidr({
+        side: 'right'
+    });
 });
 
+//Hide ze Cart...
 $('#sidr #sidrClose').click(function(e) {
-  e.preventDefault();
-  $.sidr('close', 'sidr');
+    e.preventDefault();
+    $.sidr('close', 'sidr');
+});
+
+//OrganicTabs
+$(document).ready(function() {
+    $("#tabWrap").organicTabs({
+        "speed": 200
+    });
 });
 
 // Credit to http://www.codrops.com for the idea

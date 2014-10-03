@@ -68,8 +68,24 @@ h6 {
 .bg-darkest-gray {
     background-color: #222;
 }
+
 .none {
     display:none;
+}
+
+.filter {
+    background-color:rgba(36, 36, 36, 0.7);
+    width:100%;
+    height:100%;
+}
+
+.hide {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.hidden {
+
 }
 
 /*CUSTOM*/
@@ -132,7 +148,7 @@ h6 {
 
 #sidr i.ion-close {
     color:#ffffff;
-    font-size:22px;
+    font-size:20px;
     display:inline-block;
     width:inherit;
 }
@@ -153,6 +169,13 @@ p.cartPrice {
     width:inherit;
     margin-left:20px;
 }
+.sidr ul li.cartItem {
+    background-color: #575757;
+    border-radius: 10px;
+    width: 93%;
+    margin: 0 auto;
+}
+
 li#checkOut {
     position:absolute;
     bottom:0px;
@@ -374,6 +397,7 @@ header .intro-text .intro-lead-in {
     font-size: 22px;
     font-style: italic;
     line-height: 22px;
+    text-transform: capitalize;
 }
 
 header .intro-text .intro-heading {
@@ -397,6 +421,8 @@ header .intro-text .intro-heading {
         font-size: 40px;
         font-style: italic;
         line-height: 40px;
+        text-transform: capitalize;
+        font-weight:400;
     }
 
     header .intro-text .intro-heading {
@@ -413,13 +439,13 @@ section {
     padding: 100px 0;
 }
 
-section h2.section-heading {
+h2.section-heading {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
 }
 
-section h3.section-subheading {
+h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -434,39 +460,75 @@ section h3.section-subheading {
     }
 }
 
+/*SHOP PAGE*/
+.shop header .intro-text {
+    padding-top: 180px;
+    padding-bottom: 80px;
+}
+
+.shop header {
+    background-image:url("../img/parked-bike.jpg");
+    background-position:center bottom;
+}
+
+.shop header h1, .shop header h2 {
+    text-align:left;
+}
+
 .service-heading {
     margin: 15px 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item {
+/*---Shop Tabs---*/
+#shopTabs { margin-top:80px; }
+#shopTabs h2.section-heading { margin-bottom:0px; }
+#shopTabs .list-wrap { background: #eee; padding: 10px; margin: 0 0 15px 0; }
+#shopTabs ul { list-style: none; }
+#shopTabs ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #666; }
+#shopTabs ul li a:hover { background: #333; color: white; }
+#shopTabs .tab { overflow: hidden; }
+#shopTabs .tab li { width: 100%; float: left; margin: 0 10px 0 0; }
+#shopTabs .tab li.last { margin-right: 0; }
+#shopTabs .tab li a { display: block; padding: 5px; background: #666; color: white; font-size: 10px; text-align: center; border: 0; }
+#shopTabs li a.current,#shopTabs li a.current:hover { background-color: #eee !important; color: black; }
+#shopTabs .tab li a:hover, #shopTabs .tab li a:focus { background: #999;}
+.shopNavItem { display:inline-block; width:33%; }
+/*---End Shop Tabs---*/
+
+.shop .shop-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+.shop .shop-item .shop-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+.shop .shop-item .shop-link .shop-hover {
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(254,209,54,.9);
+    background: rgba(92, 184, 92, 0.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+.list-wrap .fa-shopping-cart:before {
+    font-size:70px;
+    line-height:50px;
+}
+
+.shop .shop-item .shop-link .shop-hover:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+.shop .shop-item .shop-link .shop-hover .shop-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -477,16 +539,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+.shop .shop-item .shop-link .shop-hover .shop-hover-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+.shop .shop-item .shop-link .shop-hover .shop-hover-content h3,
+.shop .shop-item .shop-link .shop-hover .shop-hover-content h4 {
     margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+.shop .shop-item .shop-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -494,24 +556,30 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+.shop .shop-item .shop-caption h4 {
+    text-align:left;
     margin: 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+.shop .shop-item .shop-caption p {
+    text-align:left;
     margin: 0;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
-
-#portfolio * {
-    z-index: 2;
+ul.tab {
+    list-style-type: none;
+    padding:0px;
 }
 
+/*.shop * {
+    z-index: 2;
+}*/
+
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    .shop .shop-item {
         margin: 0 0 30px;
     }
 }
@@ -847,7 +915,7 @@ footer ul.quicklinks {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+.shop-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -858,32 +926,32 @@ footer ul.quicklinks {
     box-shadow: none;
 }
 
-.portfolio-modal .modal-content h2 {
+.shop-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
 }
 
-.portfolio-modal .modal-content p {
+.shop-modal .modal-content p {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content p.item-intro {
+.shop-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
 
-.portfolio-modal .modal-content ul.list-inline {
+.shop-modal .modal-content ul.list-inline {
     margin-top: 0;
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content img {
+.shop-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .close-modal {
+.shop-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -893,11 +961,11 @@ footer ul.quicklinks {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.shop-modal .close-modal:hover {
     opacity: .3;
 }
 
-.portfolio-modal .close-modal .lr {
+.shop-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -908,7 +976,7 @@ footer ul.quicklinks {
     transform: rotate(45deg);
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.shop-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
