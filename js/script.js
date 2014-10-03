@@ -39,6 +39,11 @@ $(document).ready(function() {
   });
 });
 
+$('#sidr #sidrClose').click(function(e) {
+  e.preventDefault();
+  $.sidr('close', 'sidr');
+});
+
 // Credit to http://www.codrops.com for the idea
 // Header animate on offset from top
 var cbpAnimatedHeader = (function() {
