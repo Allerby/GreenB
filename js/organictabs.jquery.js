@@ -33,7 +33,6 @@
                     $allListWrap = base.$el.find(".list-wrap"),
                     curListHeight = $allListWrap.height();
                     $allListWrap.height(curListHeight);
-                    console.log($newList);
 
                 if ((listID != curList) && ( base.$el.find(":animated").length == 0)) {
 

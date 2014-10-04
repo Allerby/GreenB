@@ -520,6 +520,8 @@ h3.section-subheading {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
+    z-index:1;
+    overflow:hidden;
 }
 
 .shop .shop-item .shop-link .shop-hover {
@@ -531,6 +533,7 @@ h3.section-subheading {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
+    z-index:2;
 }
 
 .list-wrap .fa-shopping-cart:before {
@@ -583,6 +586,34 @@ h3.section-subheading {
     font-size: 16px;
     font-style: italic;
 }
+#frameTab .img-responsive {
+    background-size:cover;
+    background-position:center center;
+    display:block;
+    width: 360px;
+    height: 300px;
+}
+.frame1 {
+    background-image:url('../img/shop/dahon-folding-bike.png');
+}
+.frame2 {
+    background-image:url('../img/shop/foldable-bike.png');
+}
+.frame3 {
+    background-image:url('../img/shop/Folding-Bike-alt.png');
+    transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+
+}
+.frame4 {
+    background-image:url('../img/shop/Folding-Bike-DH-102.jpg');
+}
+.frame5 {
+    background-image:url('../img/shop/Tern-folding-bike.jpg');
+}
+.frame6 {
+    background-image:url('../img/shop/Folding-Bike-Bicycle-orange.jpg');
+}
+
 ul.tab {
     list-style-type: none;
     padding:0px;
