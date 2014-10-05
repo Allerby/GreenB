@@ -9,6 +9,12 @@ $(function() {
     });
 });
 
+$(".navbar-default .nav li").mouseenter(function() {
+    $(this).addClass ('hover');
+}).mouseleave(function() {
+    $(this).removeClass ('hover');
+});
+
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
@@ -33,16 +39,21 @@ $('#searchClose').click(function(e) {
     $('.navbar > .container').fadeToggle("slow");
 });
 
-//Unleash ze Shopping Cart!
+// Unleash ze Shopping Cart!
 $(document).ready(function() {
     $('#shoppingCart').sidr({
         side: 'right'
     });
 });
 
-//Hide ze Cart...
+// Hide ze Cart...
 $('#sidr #sidrClose').click(function(e) {
     e.preventDefault();
+    $.sidr('close', 'sidr');
+});
+
+//Close shopping Cart on Checkout
+$('#checkOut').click(function(e) {
     $.sidr('close', 'sidr');
 });
 

@@ -45,6 +45,9 @@ a:active,
 a.active {
     color: #4DA74D;
 }
+.mb50 {
+    margin-bottom:50px;
+}
 
 h1,
 h2,
@@ -87,6 +90,26 @@ h6 {
 .hidden {
 
 }
+body.internal header {
+    background-image:none;
+    background-color:#222;
+}
+
+section.loginForm {
+    padding:230px 0px 230px 0px;
+
+}
+
+/*LOGIN-PAGE*/
+
+body.customerLogin header {
+    background-image: url('../img/bikes-china-town.jpg');
+}
+body.businessLogin header {
+    background-image: url('../img/green-bike.jpg');
+}
+
+/*END LOGIN PAGE*/
 
 /*CUSTOM*/
 #searchForm {
@@ -98,7 +121,7 @@ h6 {
     position: absolute;
     height: inherit;
     border-radius: 0px;
-    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.7);
 }
 #searchInput {
     display:block;
@@ -136,7 +159,7 @@ h6 {
 /*Shopping Cart*/
 #sidr h3 {
     font-size:22px;
-    padding:20px 12px;
+    padding:20px 20px;
     margin-bottom:0px;
     background-image:none;
     background-color:transparent;
@@ -169,18 +192,26 @@ p.cartPrice {
     width:inherit;
     margin-left:20px;
 }
-.sidr ul li.cartItem {
-    background-color: #222;
-    border-radius: 10px;
-    width: 93%;
-    margin: 0 auto;
+.sidr {
+    box-shadow: inset 5px 0px 10px 0px #222;
+}
+.sidr ul li {
+    color:#fff;
 }
 
+.sidr ul li.cartItem {
+    background-color: #414141;
+    border-radius: 10px;
+    width: 93%;
+    margin: 7px auto;
+}
 li#checkOut {
+    border-bottom:0px;
     position:absolute;
     bottom:0px;
     width:100%;
     background-color:#5CB85C;
+    padding: 0px 20px;
 }
 
 .sidr ul li a, .sidr ul li span {
@@ -341,6 +372,56 @@ a .btn-1e:active {
 .navbar-default .navbar-nav>.active>a:focus {
     background-color:transparent;
 }
+li.hover ul#userMenu {
+    display:block;
+}
+
+.navbar-default ul#userMenu {
+    background-color:transparent;
+    left:-40px;
+    padding:10px;
+    display:none;
+    position:absolute;
+}
+
+.navbar-default.navbar-shrink ul#userMenu {
+    background-color:#222;
+}
+
+.navbar-default ul#userMenu li {
+    text-align:center;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: all .3s;
+    list-style-type:none;
+    padding:5px;
+    color:#fff;
+    /*border-bottom: 1px solid rgba(0,0,0,.1);*/
+}
+.navbar-default.navbar-shrink ul#userMenu:before {
+    border-bottom: 5px solid #222;
+}
+
+.navbar-default ul#userMenu:before {
+    position:absolute;
+    top:-5px;
+    left:55px;
+    content:'';
+    display:block;
+    width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+}
+.navbar-default ul#userMenu li a:hover {
+    outline: 0;
+    color: #5CB85C;
+}
+
+
 
 @media(min-width:768px) {
     .navbar-default {
@@ -366,6 +447,7 @@ a .btn-1e:active {
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color: #222;
+        -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 1);
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -495,6 +577,17 @@ h3.section-subheading {
 #shopTabs .tab li a:hover, #shopTabs .tab li a:focus { background: #999;}
 .shopNavItem { display:inline-block; width:33%; }
 /*---End Shop Tabs---*/
+
+/*Sale Modal*/
+.saleModal .modal-content {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 2%;
+    max-height: 90%;
+    overflow-y: scroll;
+    padding: 40px;
+}
+
 .shop #tabWrap .col-md-4 {
     width:30.33333333%;
 }
@@ -585,6 +678,9 @@ h3.section-subheading {
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
+}
+.radioLabel {
+    padding:7px 10px 0px 10px;
 }
 #frameTab .img-responsive {
     background-size:cover;
@@ -886,7 +982,7 @@ section#contact .form-group textarea {
     padding: 20px;
 }
 
-section#contact .form-group input.form-control {
+.form-group input.form-control {
     height: auto;
     border-radius:0px;
 }
@@ -960,6 +1056,22 @@ footer ul.quicklinks {
     outline: 0;
 }
 
+.saleModal .btn {
+    border:2px solid rgb(51, 51, 51);
+}
+.saleModal a .btn {
+    color:rgb(51, 51, 51);
+}
+.saleModal a .btn:hover {
+    color:#fff;
+}
+.saleModal .btn-1e:after {
+    background-color:rgb(51, 51, 51);
+}
+.saleModal .btn-wrap {
+    float:right;
+}
+
 .shop-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -1030,6 +1142,19 @@ footer ul.quicklinks {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+table.shopOrder {
+    width:100%;
+}
+table.shopOrder tr {
+    padding:10px 0;
+    width:100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+table.shopOrder td,table.shopOrder th {
+    padding:10px 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
 
 ::-moz-selection {
     text-shadow: none;
