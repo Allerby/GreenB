@@ -39,6 +39,13 @@ $('#searchClose').click(function(e) {
     $('.navbar > .container').fadeToggle("slow");
 });
 
+$(document).ready(function() {
+    $('.shop-link').sidr({
+        side: 'right'
+    });
+});
+
+
 // Unleash ze Shopping Cart!
 $(document).ready(function() {
     $('#shoppingCart').sidr({

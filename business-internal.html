@@ -35,9 +35,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
 </head>
 
-<body id="page-top" class="internal customerLogin">
+<body id="page-top" class="shop business-internal">
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -116,7 +117,7 @@
             <li class="cartItem"><span style="inline-block"><img class="cartImage" src="img/shop/bike-wheel.png" /><a href="#">Blade Wheel</a><p class="cartPrice">$145.00</p></span></li>
             <li class="cartItem"><span style="inline-block"><img class="cartImage" src="img/shop/bike-wheel.png" /><a href="#">Bike Frame</a><p class="cartPrice">$350.00</p></span></li>
             <li class="cartItem"><span style="inline-block"><img class="cartImage" src="img/shop/bike-wheel.png" /><a href="#">Spare Parts</a><p class="cartPrice">$170.00</p></span></li>
-            <li id="checkOut"><a href="#saleModal" data-toggle="modal">Checkout</a></li>
+            <a href="#saleModal" data-toggle="modal"><li id="checkOut">Checkout</li></a>
         </ul>
     </div>
 
@@ -124,61 +125,131 @@
     <header>
         <div class="filter">
             <div class="container">
-                <section class="loginForm">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center">
-                            </div>
-                        </div>
-                        <div class="row text-center">
-                            <div class="col-md-5">
-                                <h2 class="section-heading">First Time?
-                                <h3 class="section-subheading">Sign-up using the form below</h3>
-                                <form class="form-horizontal">
-                                    <ul class="list-unstyled">
-                                        <div class="form-group">
-                                            <li><label for="" class="control-label">First Name:</label><input type="text" class="form-control" /></li>
-                                        </div>
-                                        <div class="form-group">
-                                            <li><label for="" class="control-label">Last Name:</label><input type="text" class="form-control" /></li>
-                                        </div>
-                                        <div class="form-group">
-                                            <li><label for="" class="control-label">Email:</label><input type="email" class="form-control" /></li>
-                                        </div>
-                                        <div class="btn-wrap login">
-                                            <a href="#confirmModal" data-toggle="modal">
-                                              <div class="btn btn-1e">Sign-up</div>
-                                            </a>
-                                        </div>
-                                    </ul>
-                                </form>
-                            </div>
-                            <div class="col-md-1"></div>
-                            <div class="col-md-5">
-                                <h2 class="section-heading">GreenB Veteran?
-                                <h3 class="section-subheading">Login here</h3>
-                                <form class="form-horizontal">
-                                    <ul class="list-unstyled">
-                                        <div class="form-group">
-                                            <li><label for="" class="control-label">Email:</label><input type="text" class="form-control" /></li>
-                                        </div>
-                                        <div class="form-group">
-                                            <li><label for="" class="control-label">Password:</label><input type="password" class="form-control" /></li>
-                                        </div>
-                                        <div class="btn-wrap login">
-                                            <a href="index.html">
-                                              <div class="btn btn-1e">Login</div>
-                                            </a>
-                                        </div>
-                                    </ul>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <div class="intro-text">
+                    <h1 class="intro-heading">Business</h1>
+                    <h2 class="intro-lead-in">Order below</h2>
+                </div>
             </div>
         </div>
     </header>
+
+    <!-- Fixed 'to-top' -->
+    <a href="#page-top" class="ion-chevron-up page-scroll" id="toTop"></a>
+
+    <!-- Shop Tabs -->
+    <div id="tabWrap">
+
+        <div class="list-wrap">
+            <ul class="tab">
+                <li id="tab-one">
+                    <!-- shop Grid Section -->
+                    <section id="" class="shop bg-light-gray">
+
+                        <div class="container">
+                            <div class="row">
+
+                                <h1>Pre-Designed Bikes</h1>
+                                <table class="shopOrder">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th><th>Amount</th><th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cartItem">
+                                            <td>Product Item</td>
+                                            <td><input type="number" class="w40" value="3" /></td>
+                                            <td>$180</td>
+                                        </tr>
+                                        <tr class="cartItem">
+                                            <td>Product Item</td>
+                                            <td><input type="number" class="w40" value="4" /></td>
+                                            <td>$240</td>
+                                        </tr>
+                                        <tr class="cartItem">
+                                            <td>Product Item</td>
+                                            <td><input type="number" class="w40" value="1" /></td>
+                                            <td>$60</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <tr>
+                                                <th>Cart Subtotal</th>
+                                                <th><span class="amount">$ 378.00</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th>Shipping &amp; Handling</th>
+                                                <th><span class="amount">No Charge</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th>Order Total</th>
+                                                <th><span class="amount">$ 378.00</span></th>
+                                            </tr>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
+                                <h1>Parts</h1>
+                                <table class="shopOrder">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th><th>Amount</th><th>Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="cartItem">
+                                            <td>Product Item</td>
+                                            <td><input type="number" class="w40" value="3" /></td>
+                                            <td>$180</td>
+                                        </tr>
+                                        <tr class="cartItem">
+                                            <td>Product Item</td>
+                                            <td><input type="number" class="w40" value="4" /></td>
+                                            <td>$240</td>
+                                        </tr>
+                                        <tr class="cartItem">
+                                            <td>Product Item</td>
+                                            <td><input type="number" class="w40" value="1" /></td>
+                                            <td>$60</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <tr>
+                                                <th>Cart Subtotal</th>
+                                                <th><span class="amount">$ 378.00</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th>Shipping &amp; Handling</th>
+                                                <th><span class="amount">No Charge</span></th>
+                                            </tr>
+                                            <tr>
+                                                <th>Order Total</th>
+                                                <th><span class="amount">$ 378.00</span></th>
+                                            </tr>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <hr class="spacer" />
+                                <label for="" class="control-label">Deliver to:</label><input type="text" class="form-control" />
+                                <label for="" class="control-label">When:</label><input type="date" class="form-control" />
+
+                                <div class="btn-wrap login">
+                                    <a href="#paymentModal" data-toggle="modal">
+                                      <div class="btn btn-1e">Checkout</div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </section>
+                </li>
+
+            </ul>
+        </div>
+    </div>
 
     <!-- Personal Details Modal -->
     <div class="saleModal modal fade" id="saleModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -286,7 +357,6 @@
             </div>
         </div>
     </div>
-
     <!-- Payment Modal -->
     <div class="saleModal modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -409,31 +479,6 @@
         </div>
     </div>
 
-    <!-- Registration Success Modal -->
-    <div class="saleModal modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="container">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2">
-                    <div class="row">
-                        <h2>Registration Complete</h2>
-                        <p>Welcome onboard - you'll recieve an email containing your password soon!</p>
-                        <div class="btn-wrap login">
-                            <a href="#" data-dismiss="modal">
-                              <div class="btn btn-1e">Close</div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <footer>
         <div class="container">
             <div class="row">
@@ -446,6 +491,7 @@
 
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/organictabs.jquery.js"></script>
 
     <!-- jQuery Sidr -->
     <script src="js/jquery.sidr.js"></script>
