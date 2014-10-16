@@ -45,7 +45,6 @@ $('#searchClose').click(function(e) {
     $('.navbar > .container').fadeToggle("slow");
 });
 
-
 // Unleash ze Shopping Cart!
 $(document).ready(function() {
     $('#shoppingCart').sidr({
@@ -70,6 +69,28 @@ $(document).ready(function() {
         "speed": 200
     });
 });
+
+
+$(document).ready(function() {
+
+    var attr = $('.cartItem');
+    var attrAftr = $('.cartItem:after');
+    attrHeight = $('.cartItem').offset().top;
+
+
+    //Give cart item a targetable before
+    attr.addClass('change').attr('data-content',' ');
+    attr.on('click', function() {
+        alert('click');
+    });
+
+    console.log(attrHeight);
+
+    $(attrAftr).css('top', attrHeight);
+});
+// .hover(function(){
+//
+// });
 
 $('#tab-one .shop-link').on('click', function(e) {
     e.preventDefault();

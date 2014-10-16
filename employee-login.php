@@ -27,7 +27,7 @@
                                             <li><label for="" class="control-label">Password</label><input type="password" class="form-control" /></li>
                                         </div>
                                         <div class="btn-wrap login">
-                                            <a href="employee-internal">
+                                            <a href="employee-internal.php">
                                               <div class="btn btn-1e">Login</div>
                                             </a>
                                         </div>

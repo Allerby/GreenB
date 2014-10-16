@@ -9,7 +9,7 @@
                 <h1 class="intro-heading">GreenB</h1>
                 <h2 class="intro-lead-in">Healthy Convenience</h2>
                 <div class="btn-wrap login">
-                    <a href="customer-login">
+                    <a href="customer-login.php">
                       <div class="btn btn-1e">Login</div>
                     </a>
                 </div>

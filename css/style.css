@@ -119,6 +119,7 @@ section.loginForm {
 
 }
 
+
 /*BUSINESS INTERNAL*/
 body.business-internal header, body.employee-internal header {
     background-image: url('../img/bike-and-guy.jpg');
@@ -258,7 +259,16 @@ body.businessLogin header {
 .sidr ul li {
     color:#fff;
 }
-
+.cartItem.change:after {
+    content: attr(data-content);
+    background-color:#fff;
+    height:20px;
+    width:20px;
+    position:absolute;
+    left:0;
+    border:0;
+    border-radius:20px;
+}
 .sidr ul li.cartItem {
     background-color: #414141;
     border-radius: 10px;
