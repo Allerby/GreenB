@@ -113,10 +113,7 @@
     <!-- Shopping Cart Sidebar -->
     <div id="sidr">
         <span style="inline-block"><h3>Shopping Cart</h3><a href="#" id="sidrClose"><i class="ion-close"></i></a></span>
-        <ul>
-            <li class="cartItem"><span style="inline-block"><img class="cartImage" src="img/shop/bike-wheel.png" /><a href="#">Blade Wheel</a><p class="cartPrice">$145.00</p></span></li>
-            <li class="cartItem"><span style="inline-block"><img class="cartImage" src="img/shop/bike-wheel.png" /><a href="#">Bike Frame</a><p class="cartPrice">$350.00</p></span></li>
-            <li class="cartItem"><span style="inline-block"><img class="cartImage" src="img/shop/bike-wheel.png" /><a href="#">Spare Parts</a><p class="cartPrice">$170.00</p></span></li>
+        <ul id="sidrList">
             <a href="#saleModal" data-toggle="modal"><li id="checkOut">Checkout</li></a>
         </ul>
     </div>
@@ -170,7 +167,7 @@
             <ul class="tab">
                 <li id="tab-one">
                     <!-- shop Grid Section -->
-                    <section id="" class="shop bg-light-gray">
+                    <section id="" class="shop">
 
                         <div class="container">
                             <div class="row">
@@ -187,6 +184,7 @@
                                         <h4>Thin Spokes</h4>
                                         <p class="text-muted">$200</p>
                                     </div>
+                                    <li class="cartItem shop-item none"><span style="inline-block"><img class="cartImage" src="img/shop/dahon-folding-bike-wheel.png" /><p>Thin Spokes</p><p class="cartPrice">$200.00</p></span></li>
                                 </div>
                                 <div class="col-md-4 col-sm-6 shop-item">
                                     <a href="#" class="shop-link">
@@ -199,8 +197,9 @@
                                     </a>
                                     <div class="shop-caption">
                                         <h4>Foldable Wheel</h4>
-                                        <p class="text-muted">$200</p>
+                                        <p class="text-muted">$250</p>
                                     </div>
+                                    <li class="cartItem shop-item none"><span style="inline-block"><img class="cartImage" src="img/shop/foldable-wheel.png" /><p>Foldable Wheel</p><p class="cartPrice">$250.00</p></span></li>
                                 </div>
                                 <div class="col-md-4 col-sm-6 shop-item">
                                     <a href="#" class="shop-link">
@@ -237,7 +236,7 @@
                 <!-- Section 2 -->
                 <li id="tab-two" class="tabHidden">
                     <!-- shop Grid Section -->
-                    <section id="frameTab" class="shop bg-light-gray">
+                    <section id="frameTab" class="shop">
 
                         <div class="container">
                             <div class="row">
@@ -332,7 +331,7 @@
                 <!-- Section 3 -->
                 <li id="tab-three" class="tabHidden">
                     <!-- shop Grid Section -->
-                    <section id="" class="shop bg-light-gray">
+                    <section id="" class="shop">
 
                         <div class="container">
                             <div class="row">

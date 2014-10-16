@@ -249,12 +249,8 @@ body.businessLogin header {
     background-color:#fff;
 }
 
-p.cartPrice {
-    display:inline-block;
-    width:inherit;
-    margin-left:20px;
-}
 .sidr {
+    width:300px;
     box-shadow: inset 5px 0px 10px 0px #222;
 }
 .sidr ul li {
@@ -264,7 +260,7 @@ p.cartPrice {
 .sidr ul li.cartItem {
     background-color: #414141;
     border-radius: 10px;
-    width: 93%;
+    width: 94%;
     margin: 7px auto;
 }
 li#checkOut {
@@ -278,6 +274,16 @@ li#checkOut {
 
 .sidr ul li a, .sidr ul li span {
     display:inline-block;
+}
+.sidr ul li p { width:60%; display:inline-block; padding:0px 10px; }
+
+.sidr ul li span { width:90%; }
+
+p.cartPrice {
+    width: 10% !important;
+    float: right;
+    margin-top: 14px;
+    margin-right:10px;
 }
 
 span.fa-stack > i.ion-earth, span.fa-stack > i.ion-ios7-gear {
@@ -626,16 +632,16 @@ h3.section-subheading {
 
 /*---Shop Tabs---*/
 #shopTabs { margin-top:80px; }
-#shopTabs h2.section-heading { margin-bottom:0px; }
+#shopTabs h2.section-heading { margin-bottom:0px; font-weight:300; font-size:30px; }
 #shopTabs .list-wrap { background: #eee; padding: 10px; margin: 0 0 15px 0; }
 #shopTabs ul { list-style: none; }
 #shopTabs ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #666; }
-#shopTabs ul li a:hover { background: #333; color: white; }
+#shopTabs ul li a:hover { color: black; }
 #shopTabs .tab { overflow: hidden; }
 #shopTabs .tab li { width: 100%; float: left; margin: 0 10px 0 0; }
 #shopTabs .tab li.last { margin-right: 0; }
-#shopTabs .tab li a { display: block; padding: 5px; background: #666; color: white; font-size: 10px; text-align: center; border: 0; }
-#shopTabs li a.current,#shopTabs li a.current:hover { background-color: #eee !important; color: black; border:1px solid #666; }
+#shopTabs .tab li a { display: block; padding: 5px; background: #fafafa; color: white; font-size: 10px; text-align: center; border: 0; }
+#shopTabs li a.current,#shopTabs li a.current:hover { background-color:#333; color: white; border:1px solid #666; }
 #shopTabs .tab li a:hover, #shopTabs .tab li a:focus { background: #999;}
 .shopNavItem { display:inline-block; width:33%; }
 /*---End Shop Tabs---*/
@@ -665,7 +671,7 @@ h3.section-subheading {
     padding-right: 0px !important;
 }
 
-.shop .shop-item img {
+.shop .shop-item img.img-responsive {
     width:360px;
     height:300px;
 }

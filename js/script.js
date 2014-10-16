@@ -9,7 +9,13 @@ $(function() {
     });
 });
 
-$(".navbar-default .nav li").mouseenter(function() {
+// Prevent default action when clicking on userlogin link
+$('a#userLogin').on('click', function(e) {
+    e.preventDefault();
+});
+
+// add class of hover to nav items on mouseover
+$(".navbar-default .nav li").mouseover(function() {
     $(this).addClass ('hover');
 }).mouseleave(function() {
     $(this).removeClass ('hover');
@@ -39,12 +45,6 @@ $('#searchClose').click(function(e) {
     $('.navbar > .container').fadeToggle("slow");
 });
 
-$(document).ready(function() {
-    $('.shop-link').sidr({
-        side: 'right'
-    });
-});
-
 
 // Unleash ze Shopping Cart!
 $(document).ready(function() {
@@ -70,6 +70,27 @@ $(document).ready(function() {
         "speed": 200
     });
 });
+
+$('#tab-one .shop-link').on('click', function(e) {
+    e.preventDefault();
+    var shopItem = $(this);
+    var itemBlock = shopItem.parent('.shop-item');
+    var itemName = itemBlock.find('h4').text();
+    console.log(itemName);
+
+    if ($(itemBlock).children('li').length > 0) {
+      $.sidr('open');
+      var shopLi = itemBlock.find('li');
+      setTimeout(function(){
+        shopLi.appendTo('#sidrList');
+      }, 1000)
+    }
+    else {
+      alert('Sorry we are currently out of stock of ' + itemName);
+    }
+});
+
+$()
 
 // Credit to http://www.codrops.com for the idea
 // Header animate on offset from top
