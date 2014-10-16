@@ -60,7 +60,7 @@
 						<a href="#page-top"></a>
 					</li>
 					<li>
-						<a class="page-scroll" href="shop">Shop</a>
+						<a class="page-scroll" href="shop.php">Shop</a>
 					</li>
 					<li>
 						<a class="page-scroll" href="#product">Product</a>
@@ -75,19 +75,19 @@
 						<a class="page-scroll" href="#contact">Contact</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="faq">FAQ</a>
+						<a class="page-scroll" href="faq.php">FAQ</a>
 					</li>
 					<li>
 						<a id="userLogin" class="ion-person" href="#"></a>
 						<ul id="userMenu">
 							<li>
-								<a href="customer-login">Customer</a>
+								<a href="customer-login.php">Customer</a>
 							</li>
 							<li>
-								<a href="business-login">Business</a>
+								<a href="business-login.php">Business</a>
 							</li>
 							<li>
-								<a href="employee-login">Employee</a>
+								<a href="employee-login.php">Employee</a>
 							</li>
 						</ul>
 					</li>

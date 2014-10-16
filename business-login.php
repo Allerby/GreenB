@@ -14,7 +14,7 @@
                         </div>
                         <div class="row text-center">
                             <div class="col-md-12 mb50">
-                                <h2>You're a business and you want to get in touch? Awesome!<br> Contact us <a href="green@b.co.nz?Subject=Business%20Interest">here</a>. Otherwise, login below using your details!</h2>
+                                <h2>You're a business and you want to get in touch? Awesome!<br> Contact us <a href="mailto:green@b.co.nz?Subject=Business%20Interest" target="_top">here</a>. Otherwise, login below using your details!</h2>
                             </div>
                             <div class="col-md-3"></div>
                             <div class="col-md-6">
@@ -30,7 +30,7 @@
                                             <li><label for="" class="control-label">Password</label><input type="password" class="form-control" /></li>
                                         </div>
                                         <div class="btn-wrap login">
-                                            <a href="business-internal">
+                                            <a href="business-internal.php">
                                               <div class="btn btn-1e">Login</div>
                                             </a>
                                         </div>
