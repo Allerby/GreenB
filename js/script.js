@@ -9,6 +9,13 @@ $(function() {
     });
 });
 
+$('a.update').on('click', function(e) {
+    e.preventDefault();
+    sweetAlert({   title: "Updated!",   text: 'Stock has been updated',   type: "success",   confirmButtonText: "Done" });
+});
+
+
+
 // Prevent default action when clicking on userlogin link
 $('a#userLogin').on('click', function(e) {
     e.preventDefault();
@@ -73,26 +80,25 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-    var attr = $('.cartItem');
-    var attrAftr = $('.cartItem:after');
-    attrHeight = $('.cartItem').offset().top;
-
+    var attr = $('body.shop .cartItem');
 
     //Give cart item a targetable before
-    attr.addClass('change').attr('data-content',' ');
+    // attr.addClass('change').attr('data-content','');
     attr.on('click', function() {
-        alert('click');
+        $(this).remove();
     });
 
-    console.log(attrHeight);
-
-    $(attrAftr).css('top', attrHeight);
 });
-// .hover(function(){
-//
+
+// $('.shop-item').on('click', function() {
+//     var attrAftr = $('.cartItem:after');
+//     var attrHeight = $(this).offset().top;
+//     console.log(attrHeight);
+//     $(attrAftr).css('top', attrHeight);
 // });
 
-$('#tab-one .shop-link').on('click', function(e) {
+
+$('body.shop #tab-one .shop-link').on('click', function(e) {
     e.preventDefault();
     var shopItem = $(this);
     var itemBlock = shopItem.parent('.shop-item');
@@ -107,11 +113,9 @@ $('#tab-one .shop-link').on('click', function(e) {
       }, 1000)
     }
     else {
-      alert('Sorry we are currently out of stock of ' + itemName);
+        sweetAlert({   title: "Out of Stock!",   text: 'Sorry we are currently out of stock of ' + itemName,   type: "error",   confirmButtonText: "Cool" });
     }
 });
-
-$()
 
 // Credit to http://www.codrops.com for the idea
 // Header animate on offset from top

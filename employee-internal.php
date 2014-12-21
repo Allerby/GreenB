@@ -7,8 +7,8 @@
         <div class="filter">
             <div class="container">
                 <div class="intro-text">
-                    <h1 class="intro-heading">Shop</h1>
-                    <h2 class="intro-lead-in">Check out our wares</h2>
+                    <h1 class="intro-heading">Site Management</h1>
+                    <h2 class="intro-lead-in">Update stock or live chat with customers</h2>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
                                 </table>
 
                                 <div class="btn-wrap login">
-                                    <a href="#updateModal" data-toggle="modal">
+                                    <a class="update" href="#">
                                       <div class="btn btn-1e">Update</div>
                                     </a>
                                 </div>
@@ -141,7 +141,7 @@
                                 </table>
 
                                 <div class="btn-wrap login">
-                                    <a href="#updateModal" data-toggle="modal">
+                                    <a class="update" href="#">
                                       <div class="btn btn-1e">Update</div>
                                     </a>
                                 </div>
@@ -189,7 +189,7 @@
                                 </table>
 
                                 <div class="btn-wrap login">
-                                    <a href="#updateModal" data-toggle="modal">
+                                    <a class="update" href="#">
                                       <div class="btn btn-1e">Update</div>
                                     </a>
                                 </div>
@@ -237,7 +237,7 @@
                                 </table>
 
                                 <div class="btn-wrap login">
-                                    <a href="#updateModal" data-toggle="modal">
+                                    <a class="update" href="#">
                                       <div class="btn btn-1e">Update</div>
                                     </a>
                                 </div>
@@ -296,7 +296,7 @@
     <!-- Sales Modals -->
     <?php include('partials/saleModal.php'); ?>
 
-    <?php include('partials/employeeInternalModal.php'); ?>
+    <?php include('partials/chatModal.php'); ?>
 
 
 <?php include('footer.php'); ?>

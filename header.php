@@ -15,6 +15,7 @@
 	<link href="css/ionicons.min.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/jquery.sidr.dark.css" rel="stylesheet">
+	<link href="css/sweet-alert.css" rel="stylesheet">
 
 
 	<!-- Custom CSS -->
@@ -60,9 +61,6 @@
 						<a href="#page-top"></a>
 					</li>
 					<li>
-						<a class="page-scroll" href="shop.php">Shop</a>
-					</li>
-					<li>
 						<a class="page-scroll" href="/greenB#product">Product</a>
 					</li>
 					<li>
@@ -75,8 +73,11 @@
 						<a class="page-scroll" href="/greenB#contact">Contact</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="faq.php">FAQ</a>
+						<a class="page-scroll" href="shop.php">Shop</a>
 					</li>
+					<!-- <li>
+						<a class="page-scroll" href="faq.php">FAQ</a>
+					</li> -->
 					<li>
 						<a id="userLogin" class="ion-person" href="#"></a>
 						<ul id="userMenu">

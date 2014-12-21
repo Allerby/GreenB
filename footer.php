@@ -15,6 +15,9 @@
 <script src="js/jquery-1.11.0.js"></script>
 <script src="js/organictabs.jquery.js"></script>
 
+<!-- Sweet Alert -->
+<script src="js/sweet-alert.min.js"></script>
+
 <!-- jQuery Sidr -->
 <script src="js/jquery.sidr.js"></script>
 
