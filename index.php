@@ -1,4 +1,4 @@
-<?php include('header-home.php') ?>
+<?php include('header.php'); ?>
 
 <body class="index">
 

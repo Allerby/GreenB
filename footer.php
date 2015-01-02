@@ -11,9 +11,18 @@
 	</div>
 </footer>
 
+
+
+
 <!-- jQuery Version 1.11.0 -->
-<script src="js/jquery-1.11.0.js"></script>
+
+<script src="js/jquery.js"></script>
+
+
+<script src="js/classie.js"></script>
 <script src="js/organictabs.jquery.js"></script>
+
+<script src="js/cbpAnimatedHeader.js"></script>
 
 <!-- Sweet Alert -->
 <script src="js/sweet-alert.min.js"></script>
@@ -24,9 +33,11 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.js"></script>
 
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="js/controllers.js"></script>
+
 <!-- Plugin JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-<script src="js/classie.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script src="js/script.js"></script>

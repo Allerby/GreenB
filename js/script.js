@@ -14,8 +14,6 @@ $('a.update').on('click', function(e) {
     sweetAlert({   title: "Updated!",   text: 'Stock has been updated',   type: "success",   confirmButtonText: "Done" });
 });
 
-
-
 // Prevent default action when clicking on userlogin link
 $('a#userLogin').on('click', function(e) {
     e.preventDefault();
@@ -90,14 +88,6 @@ $(document).ready(function() {
 
 });
 
-// $('.shop-item').on('click', function() {
-//     var attrAftr = $('.cartItem:after');
-//     var attrHeight = $(this).offset().top;
-//     console.log(attrHeight);
-//     $(attrAftr).css('top', attrHeight);
-// });
-
-
 $('body.shop #tab-one .shop-link').on('click', function(e) {
     e.preventDefault();
     var shopItem = $(this);
@@ -116,40 +106,3 @@ $('body.shop #tab-one .shop-link').on('click', function(e) {
         sweetAlert({   title: "Out of Stock!",   text: 'Sorry we are currently out of stock of ' + itemName,   type: "error",   confirmButtonText: "Cool" });
     }
 });
-
-// Credit to http://www.codrops.com for the idea
-// Header animate on offset from top
-var cbpAnimatedHeader = (function() {
-
-  var docElem = document.documentElement,
-    header = document.querySelector( '.navbar-default' ),
-    didScroll = false,
-    changeHeaderOn = 300;
-
-  function init() {
-    window.addEventListener( 'scroll', function( event ) {
-      if( !didScroll ) {
-        didScroll = true;
-        setTimeout( scrollPage, 250 );
-      }
-    }, false );
-  }
-
-  function scrollPage() {
-    var sy = scrollY();
-    if ( sy >= changeHeaderOn ) {
-      classie.add( header, 'navbar-shrink' );
-    }
-    else {
-      classie.remove( header, 'navbar-shrink' );
-    }
-    didScroll = false;
-  }
-
-  function scrollY() {
-    return window.pageYOffset || docElem.scrollTop;
-  }
-
-  init();
-
-})();
